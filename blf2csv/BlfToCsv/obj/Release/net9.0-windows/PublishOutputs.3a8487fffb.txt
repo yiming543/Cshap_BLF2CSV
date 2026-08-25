@@ -1,0 +1,5 @@
+D:\yiming\10work_CP4\blf2csv\publish\BLF批次轉CSV.exe
+D:\yiming\10work_CP4\blf2csv\publish\BLF批次轉CSV.dll
+D:\yiming\10work_CP4\blf2csv\publish\BLF批次轉CSV.deps.json
+D:\yiming\10work_CP4\blf2csv\publish\BLF批次轉CSV.runtimeconfig.json
+D:\yiming\10work_CP4\blf2csv\publish\BLF批次轉CSV.pdb

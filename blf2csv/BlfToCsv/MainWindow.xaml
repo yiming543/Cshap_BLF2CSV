@@ -1,0 +1,38 @@
+<Window x:Class="BlfToCsv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BLF 批次轉 CSV" Height="330" Width="680"
+        MinHeight="330" MinWidth="620" WindowStartupLocation="CenterScreen">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="23" FontWeight="SemiBold" Text="BLF 批次轉 CSV" />
+        <TextBlock Grid.Row="1" Margin="0,8,0,16" Foreground="#555"
+                   Text="選擇資料夾後，程式會逐一轉換其中所有 .blf 檔案。" />
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="FolderPathTextBox" Height="36" Padding="8,6"
+                     IsReadOnly="True" VerticalContentAlignment="Center" />
+            <Button Grid.Column="1" x:Name="BrowseButton" Margin="10,0,0,0"
+                    Width="100" Height="36" Content="選擇目錄" Click="BrowseButton_Click" />
+        </Grid>
+
+        <Border Grid.Row="3" Margin="0,16,0,16" Padding="12" Background="#F5F5F5" CornerRadius="4">
+            <TextBlock x:Name="StatusTextBlock" Text="尚未選擇目錄" TextWrapping="Wrap" />
+        </Border>
+
+        <Button Grid.Row="4" x:Name="ConvertButton" Width="140" Height="42"
+                HorizontalAlignment="Right" Content="開始轉換" IsEnabled="False"
+                Click="ConvertButton_Click" />
+    </Grid>
+</Window>
