@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\yiming\\10work_CP4\\blf2csv\\BlfToCsv\\BlfToCsv.csproj": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "restore": {
         "projectUniqueName": "D:\\yiming\\10work_CP4\\blf2csv\\BlfToCsv\\BlfToCsv.csproj",
         "projectName": "BLF批次轉CSV",

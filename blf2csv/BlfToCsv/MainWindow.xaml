@@ -1,7 +1,7 @@
 <Window x:Class="BlfToCsv.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="BLF 批次轉 CSV" Height="330" Width="680"
+        Title="BLF 批次轉 CSV v1.1.0" Height="330" Width="680"
         MinHeight="330" MinWidth="620" WindowStartupLocation="CenterScreen">
     <Grid Margin="24">
         <Grid.RowDefinitions>
@@ -12,9 +12,9 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <TextBlock FontSize="23" FontWeight="SemiBold" Text="BLF 批次轉 CSV" />
+        <TextBlock FontSize="23" FontWeight="SemiBold" Text="BLF 批次轉 CSV v1.1.0" />
         <TextBlock Grid.Row="1" Margin="0,8,0,16" Foreground="#555"
-                   Text="選擇資料夾後，程式會逐一轉換其中所有 .blf 檔案。" />
+                   Text="選擇資料夾後，程式會逐一轉換其中所有 LIN、CAN 與 CAN FD 的 .blf 檔案。" />
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
